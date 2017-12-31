@@ -1,0 +1,137 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+
+  <meta property="og:title" content="Evoria - Genetic Algorithm Simulator">
+  <meta property="og:site_name" content="Evoria">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evoria-1984.firebaseapp.com">
+  <meta property="og:description" content="Evoria is an open source Genetic Algorithm Simulator written in VanillaJS, HTML & CSS. Evoria has been Orginally developed by Jean-Baptiste Clion for the DevFest Ukraine 2017">
+  <meta property="og:image" content="https://goo.gl/XN9hD2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="900">
+  <meta property="og:image" content="https://goo.gl/NbSyck">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@JBClion">
+  <meta name="twitter:title" content="Evoria - Genetic Algorithm Simulator">
+  <meta name="twitter:description" content="Evoria is an open source Genetic Algorithm Simulator written in VanillaJS, HTML & CSS. Evoria has been Orginally developed by Jean-Baptiste Clion for the DevFest Ukraine 2017">
+  <meta name="twitter:image" content="https://goo.gl/NbSyck">
+</head>
+
+<body class="noisy">
+
+	<div class="frame">
+
+	  	<div class="main-title">
+	  		EVORIA 0.1 1984 - Genetic Algorithm Experimental Solution
+	  	</div>
+
+	  	<div class="piece output">
+	  		
+	  		<div class="pane-left">
+				
+				<div class="bacteria">
+					<div id="simulator" class="simulator"></div>
+		  		</div>
+
+				<div class="program-frame">
+					<div class="title">TERMINAL</div>	
+
+					<div id="shell" class="shell">
+						<div id="history" class="history">Enter HELP to list commands</div>
+						<div id="line" class="prompt">
+							<span>root@evoria$ </span>
+							<span id="command"></span>
+						</div>
+		  			</div>
+
+		  		</div>
+
+			</div>
+
+			<div class="pane-right">
+
+				<div class="bacteria">
+					<div id="chart" class="simulator"></div>
+				</div>
+
+				<div class="program-frame">
+
+		  			<div style="width: 100%; height:100%">
+		  				
+		  				<table cellspacing="0" style="width: 100%; height:50% ;margin: 0 auto; font-size: 24px">
+ 							<tr>
+   								<th colspan="5">RESEARCH PARAMETERS</th>
+   							</tr>	
+ 							<tr>
+   								<th>COLONY</th>
+   								<th>ELITE</th>
+   								<th>MUTATION</th>
+ 							</tr>
+ 							<tr>
+   								<td id="colony">--</td>
+   								<td id="elite">--</td>
+   								<td id="mutation">--</td>
+ 							</tr>
+		  				</table>
+
+		  				<table cellspacing="0" style="width: 100%; height:50% ;margin: 0 auto; font-size: 24px">
+		  					<tr>
+   								<th colspan="5">RESEARCH RESULTS</th>
+   							</tr>	
+ 							<tr>
+   								<th>DURATION</th>
+   								<th>GENERATION</th>
+   								<th>BEST</th>
+ 							</tr>
+ 							<tr>
+   								<td id="timer">--</td>
+   								<td id="generation">--</td>
+   								<td id="best">--</td>
+ 							</tr>
+		  				</table>		  				
+		  			</div>
+
+				</div>
+
+
+			</div>  
+		</div>
+	</div>
+
+	<div class="piece scanlines noclick"></div>
+	<div class="piece glow noclick"></div>
+
+	<div style="width: 100%; text-align: center; position: absolute; bottom: 0px;"> By <a target="_blank" href="https://developers.google.com/experts/people/jean-baptiste-clion">JBClion</a> - 
+	<a target="_blank" href="https://gitlab.com/JBClion/Evoria">Code on GitLab</a>
+	</div>	
+
+	<script type="text/javascript" src="js/UI/View.js"></script>
+	<script type="text/javascript" src="js/UI/Shell.js"></script>
+	<script type="text/javascript" src="js/UI/Simulator.js"></script>
+
+	<script type="text/javascript" src="js/CM/Interpreter.js"></script>
+
+	<script type="text/javascript" src="js/GA/Tools.js"></script>
+	<script type="text/javascript" src="js/GA/Study.js"></script>
+	<script type="text/javascript" src="js/GA/Evaluator.js"></script>
+
+	<script type="text/javascript" src="js/GA/Research.js"></script>
+	<script type="text/javascript" src="js/GA/Evolution.js"></script>
+	<script type="text/javascript" src="js/GA/Axiom.js"></script>
+
+	<script type="text/javascript" src="js/App.js"></script>
+	
+	<script>
+		View.initialize();
+		Shell.listen();
+	</script>
+
+</body>
+
+
+</html>

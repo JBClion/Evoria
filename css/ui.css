@@ -1,0 +1,136 @@
+.line{
+	height: 4%;
+	width: 100%;
+}
+
+.cline{
+	height: 1%;
+	width: 100%;
+}
+
+.calive{
+	height: 100%;
+	width: 1%;
+	display: inline-block; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: #14fdce;
+}
+
+.cdead{
+	height: 100%;
+	width: 1%;
+	display: inline-block; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: transparent;
+}
+
+.alive{
+	height: 100%;
+	width: 4%;
+	display: inline-block; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: #14fdce;
+}
+
+.dead{
+	height: 100%;
+	width: 4%;
+	display: inline-block; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: transparent;
+}
+
+.goal{
+	height: 100%;
+	width: 4%;
+	display: inline-block; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: rgba(0, 0, 255, 0.4);
+}
+
+.player{
+	height: 100%;
+	width: 4%;
+	display: inline-block; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: red;
+}
+
+.main-title{
+	width: 100%;
+	font-size: 26px;
+	text-align: center; 
+	float:right
+}
+
+.pane-left{
+	width: 50%;
+	height:100%;
+	overflow-y: hidden;
+	float:left
+}
+
+.pane-right{
+	width: 50%;
+	height:100%;
+	overflow-y: hidden;
+	float:right
+}
+
+
+.program-frame{
+	width: 100%;
+	height: 50%;
+	overflow-y: hidden;
+	border: 2px solid;
+}
+
+.title{
+	width: 100%;
+	border-bottom: 1px solid;
+	padding-left: 15px
+}
+
+.shell{
+	overflow-y: hidden; 
+	height: 90%;
+	font-size: 20px;
+}
+
+.history{
+	width: 100%;
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.prompt{
+	padding-left: 15px;
+}
+
+.bacteria{
+	width: 100%;
+	height:50%;
+	border: 1px solid;
+}
+
+.simulator{
+	display: inline-block;
+	width: 100%;
+	height:100%;
+	font-size:0px;
+	border: 2px solid
+}
+
+tr,td,th{
+	width: 20%;
+	text-align:center;
+	border: 1px solid;
+}
+
+
